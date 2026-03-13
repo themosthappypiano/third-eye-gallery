@@ -190,8 +190,8 @@ export default function Home() {
       {/* Featured Artists */}
       <section className="py-24 md:py-32 bg-[radial-gradient(circle_at_15%_20%,rgba(16,185,129,0.12),transparent_35%),linear-gradient(140deg,#040b10_0%,#08131c_45%,#071018_100%)] border-y border-emerald-300/15">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-            <div>
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-6">
+            <div className="text-center md:text-left">
               <h2 className="font-display text-4xl md:text-6xl text-emerald-200 mb-2 text-glow">The Artists</h2>
               <p className="text-slate-200 text-lg">Masters of their respective crafts.</p>
             </div>
