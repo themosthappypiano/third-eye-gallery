@@ -89,16 +89,17 @@ export default function Home() {
               <video
                 src={`${import.meta.env.BASE_URL}${HERO_VIDEO_PAIRS[activePair][0]}`}
                 className="w-full h-full object-contain bg-black opacity-70"
-                autoPlay
+                autoPlay={activePair !== 0}
                 muted
                 loop
                 playsInline
                 onLoadedMetadata={(e) => {
-                  if (activePair !== 0) return;
                   const el = e.currentTarget;
-                  if (el.duration > 4.5) {
-                    el.currentTime = 4.5;
-                  }
+                  if (activePair !== 0) return;
+                  if (el.duration > 4.5) el.currentTime = 4.5;
+                  window.setTimeout(() => {
+                    void el.play().catch(() => undefined);
+                  }, 500);
                 }}
               />
               <video
