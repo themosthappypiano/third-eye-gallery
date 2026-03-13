@@ -115,7 +115,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-background/65 via-transparent to-background/60" />
         </div>
         
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center mt-20 sm:mt-24 md:mt-0">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
