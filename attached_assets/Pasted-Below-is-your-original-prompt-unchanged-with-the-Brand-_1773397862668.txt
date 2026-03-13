@@ -1,0 +1,776 @@
+Below is your **original prompt unchanged**, with the **Brand Kit integrated as an additional section** so Lovable can understand the visual system. No existing wording or structure has been modified.
+
+---
+
+# Third Eye Gallery — Website Design Specification
+
+## 1. Project Overview
+
+**Website Goal**
+Create a modern, mobile-first website that presents Third Eye Gallery as an **art-forward tattoo collective**, helping visitors easily discover artists, explore tattoo styles, and book appointments with the right artist.
+
+The site should feel more like an **art gallery than a traditional tattoo shop**, emphasizing individuality, craftsmanship, and the travel-worthy reputation of the artists.
+
+**Tagline**
+Art you wear. One-of-one. Every time.
+
+**Primary Call-to-Actions**
+
+1. **Book with an Artist**
+2. **Explore the Gallery**
+3. **View Artists**
+4. **Read Booking Policy**
+
+**Key Business Details**
+
+Location
+2025 E Levee St #6703
+Dallas, Texas
+
+Phone
++1 214-484-3618
+
+Hours
+Opens daily at 1pm
+
+Rating
+4.7 ⭐ from 123 reviews
+
+Typical pricing
+$100–$500+
+
+---
+
+# 2. Website Structure
+
+**Application Type:** Multi-page website
+**Design priority:** Mobile-first (Instagram traffic expected)
+
+### Main Navigation
+
+Home
+Artists
+Gallery
+Art Prints
+Booking
+Visit
+
+---
+
+## Page Structure
+
+### Home Page
+
+Sections:
+
+1. Hero
+2. Brand Introduction
+3. Why Third Eye Gallery
+4. Featured Artists
+5. Testimonials
+6. Tattoo Gallery Preview
+7. Art Prints Preview
+8. Deposit Policy Overview
+9. Visit / Contact Footer
+
+---
+
+### Artists Page
+
+Purpose:
+Allow users to browse artists and **book directly with them**.
+
+Features:
+
+Artist cards
+Filterable by style
+Quick booking buttons
+Instagram links
+
+Filters:
+
+Custom
+Traditional
+Neo-Traditional
+Anime
+Gothic
+Colour
+Cover-Ups
+Flash
+Portraits
+Illustrative
+
+---
+
+### Artist Detail Page
+
+Each artist receives a dedicated page.
+
+Sections:
+
+1. Artist header with portrait or studio image
+2. Artist bio
+3. Specialties
+4. Tattoo portfolio grid
+5. Booking instructions
+6. Instagram link
+7. Related artists
+
+Primary CTA:
+**Book with [Artist]**
+
+---
+
+### Gallery Page
+
+Purpose:
+Showcase tattoo work visually.
+
+Features:
+
+Filterable image grid
+Filter by artist
+Filter by style
+Tap image → lightbox view
+
+Each image displays:
+
+Tattoo photo
+Artist attribution
+Style tags
+
+---
+
+### Art Prints Page
+
+Purpose:
+Sell or showcase artwork created by artists.
+
+Features:
+
+Artwork grid
+Artist name
+Title
+Size
+Price (if applicable)
+
+CTA options:
+
+Buy Print
+Inquire
+
+---
+
+### Booking Page
+
+Purpose:
+Explain the booking process clearly and set expectations.
+
+Sections:
+
+1. Intro to booking
+2. Artist selection guidance
+3. Deposit policy
+4. Booking request instructions
+5. Pricing expectations
+6. FAQ
+
+Key message:
+Third Eye Gallery books **by artist**, not by general availability.
+
+---
+
+### Visit Page
+
+Purpose:
+Provide location and contact information.
+
+Sections:
+
+Studio intro
+Address and map
+Phone number
+Hours
+Social links
+
+---
+
+# 3. Copywriting Guide
+
+## Hero
+
+Headline
+Art you wear. One-of-one. Every time.
+
+Subheadline
+Third Eye Gallery is a Dallas tattoo collective where custom work, gallery culture, and artist-first booking come together.
+
+Primary CTA
+Book with an Artist
+
+Secondary CTA
+Explore the Gallery
+
+---
+
+## Brand Introduction
+
+Third Eye Gallery blends tattooing with the atmosphere of a contemporary art space. Original artwork lines the walls, each artist works from their own personalized suite, and every tattoo is approached as a collaborative creative project.
+
+This is a studio for people who care about art, want an intentional experience, and are looking for an artist whose style truly fits their idea.
+
+---
+
+## Why Clients Choose Third Eye
+
+**Artist-first booking**
+Choose the artist whose style matches your idea.
+
+**True gallery atmosphere**
+Original artwork, prints, and a studio environment that feels like an art space.
+
+**Wide style range**
+Traditional, neo-traditional, anime, gothic, portraits, colour work, flash, and cover-ups.
+
+**Comfort-focused culture**
+Clients mention snacks, water, breaks, and a welcoming environment.
+
+**Worth the trip**
+Many clients travel hours or fly from other states to work with these artists.
+
+---
+
+## Testimonials
+
+“I flew from Orlando to Dallas for Taylor.”
+— Victoria
+
+“We drive three hours every time for Zach.”
+— Ernest
+
+“I flew in from Washington State for Jay.”
+— Mitchel
+
+“Paloma gave me my first tattoo and I followed her to this studio.”
+— Paola
+
+“Elle has been my artist for 8 years.”
+— Jose
+
+“The artwork on the walls is a visual candyland.”
+— Leighna
+
+---
+
+## Deposit Policy
+
+All tattoo appointments require a **non-refundable deposit** to secure your booking.
+
+Deposits are applied toward the final price unless otherwise stated by the artist.
+
+Each artist may have slightly different booking requirements or rescheduling policies, so please review the instructions on their page before submitting a request.
+
+---
+
+# 4. Layout Guide
+
+## Visual Design Philosophy
+
+The design should feel like a mix of:
+
+Modern tattoo culture
+Contemporary art gallery
+Minimalist editorial website
+
+The artwork should remain the **visual focus**.
+
+Avoid clutter, heavy textures, or stereotypical tattoo graphics.
+
+---
+
+## Homepage Layout
+
+Hero (full width image)
+
+↓
+
+Brand introduction
+
+↓
+
+Why choose Third Eye (4–5 cards)
+
+↓
+
+Featured artists grid
+
+↓
+
+Testimonial section
+
+↓
+
+Tattoo gallery preview grid
+
+↓
+
+Art prints section
+
+↓
+
+Deposit policy highlight
+
+↓
+
+Visit / Contact footer
+
+---
+
+## Artists Page Layout
+
+Top filter bar
+
+↓
+
+Artist grid (cards)
+
+Each card contains:
+
+Artist photo
+Name
+Specialties
+Instagram handle
+Book button
+
+---
+
+## Artist Page Layout
+
+Artist header
+
+↓
+
+Bio and specialties
+
+↓
+
+Tattoo portfolio grid
+
+↓
+
+Booking instructions
+
+↓
+
+Instagram link
+
+↓
+
+Related artists
+
+---
+
+## Gallery Layout
+
+Masonry image grid.
+
+Filters at top.
+
+Click image → full screen viewer with artist attribution.
+
+---
+
+# 5. Style Guide
+
+## Color Palette
+
+Primary black
+#000000
+
+Cool white glow
+#E8EEFF
+
+Electric blue accent
+#C8D8FF
+
+Deep indigo depth
+#1A1A3E
+
+Primary text white
+#FFFFFF
+
+---
+
+## Typography
+
+Headers
+Bebas Neue or Futura
+Bold, uppercase
+
+Body text
+Montserrat or DM Sans
+
+Artist names
+Light italic styling
+
+---
+
+## UI Elements
+
+Buttons
+Outline with subtle glow hover effect
+
+Cards
+Dark surfaces with soft blue edge glow
+
+Images
+High contrast, minimal overlays
+
+Spacing
+Generous negative space to highlight artwork
+
+---
+
+## Iconography
+
+Simple line icons only.
+
+Examples:
+
+Map pin
+Calendar
+Filter sliders
+Palette
+Instagram
+Star/spark
+
+Icons should remain minimal so tattoo artwork remains the focus.
+
+---
+
+# 6. Artist List (Current)
+
+Zach Mathews
+Custom, colour, cover-ups
+
+Elle (Latesha)
+Neo-traditional, gothic, flash, custom
+
+Paloma Sanchez
+Custom design, anime, cover-ups
+
+Taylor (@rugido)
+Traditional, flash, colour
+
+Freddie Trevino
+Custom, tribute work
+
+Roque Mendez
+Custom (bio pending)
+
+Moses Veliz
+Custom (bio pending)
+
+Jay Joree
+Custom
+
+Alex Overfelt
+Custom
+
+Marilee
+Custom colour
+
+Note:
+Some artists mentioned in older reviews appear to be former members and should not be included unless confirmed.
+
+---
+
+# 7. Additional Functional Instructions
+
+**Artist-first booking system**
+
+Every artist card should include:
+
+Book with [Artist]
+
+Link should lead to:
+
+Artist page OR booking form.
+
+---
+
+**Gallery filtering**
+
+Users should be able to filter tattoos by:
+
+Artist
+Style
+
+---
+
+**Mobile optimization**
+
+Most traffic likely originates from Instagram.
+
+Key priorities:
+
+Fast loading
+Large images
+Easy thumb navigation
+Prominent booking buttons
+
+---
+
+# 8. Lovable Best Practices Checklist
+
+Knowledge file should include:
+
+Business vision
+Target audience
+Artist specialties
+Booking workflow
+Deposit policy
+
+---
+
+Prompts should define:
+
+Pages
+Artist profiles
+Booking logic
+Filterable gallery behavior
+
+---
+
+Development flow recommended:
+
+1. Generate site structure
+2. Build homepage layout
+3. Add artists and artist pages
+4. Implement gallery filtering
+5. Add booking system
+6. Add prints page
+7. Test mobile experience
+
+---
+
+# 9. Brand Kit — Third Eye Gallery
+
+## Brand Identity Concept
+
+The **Third Eye brand** represents awareness, artistic perception, and individuality.
+The logo combines the number **3**, the lettering **rd**, and a stylized **eye symbol** representing insight, creativity, and artistic vision.
+
+The overall brand aesthetic should feel:
+
+Art-forward
+Mystical but modern
+Minimal
+Gallery-oriented
+Creative and intentional
+
+The brand should avoid cliché tattoo imagery and instead feel like a **modern art studio identity**.
+
+---
+
+## Logo System
+
+### Primary Logo
+
+The **3rd Eye logo with integrated eye symbol**.
+
+Used for:
+
+Website header
+Hero sections
+Studio signage
+Merchandise
+Social media branding
+
+---
+
+### Secondary Logo
+
+Text-based logo:
+
+3rd
+
+Used for:
+
+Small placements
+Navigation header
+Favicons
+
+---
+
+### Icon Mark
+
+Eye symbol only.
+
+Used for:
+
+App icon
+Favicon
+Merchandise embroidery
+Brand stamp
+
+---
+
+## Brand Color System
+
+Primary Brand Colors
+
+Midnight Black
+#0B0F14
+
+Smoke Grey
+#2B2F33
+
+Accent Colors
+
+Deep Violet
+#4A2C6F
+
+Mystic Purple
+#8A2BE2
+
+Aura Pink
+#FF4DA6
+
+Highlight Color
+
+Neon White Glow
+#F2F2F2
+
+Used for glow effects around the logo.
+
+---
+
+## Brand Typography
+
+Primary Display Font
+
+Cinzel Bold
+
+Used for:
+
+Headlines
+Hero sections
+Major titles
+
+---
+
+Secondary Font
+
+Montserrat
+
+Used for:
+
+Body text
+Paragraphs
+Interface text
+Descriptions
+
+---
+
+Optional Accent Font
+
+UnifrakturCook
+
+Used sparingly for:
+
+Decorative titles
+Special announcements
+
+---
+
+## Iconography Style
+
+Icons should follow a **mystic geometry style**.
+
+Examples:
+
+Eye symbol
+Sacred triangle
+Lotus
+Sun symbol
+Moon
+Meditation silhouette
+
+All icons should be:
+
+Line-based
+Minimal
+White or neon-accented
+
+---
+
+## Visual Direction
+
+Design should emphasize:
+
+Dark backgrounds
+High contrast imagery
+Minimal interface overlays
+Neon or glow highlights
+Sacred geometry motifs
+
+Textures should remain subtle.
+
+Recommended textures:
+
+Matte black
+Stone
+Ink
+Soft gradients
+
+---
+
+## Photography Style
+
+Images should feel:
+
+Atmospheric
+Artistic
+Editorial
+High contrast
+Gallery-quality
+
+Photography should prioritize:
+
+Tattoo detail
+Artist personality
+Studio environment
+Artwork and prints
+
+---
+
+## Brand Voice
+
+Tone should feel:
+
+Confident
+Artistic
+Mystical
+Minimal
+
+Example phrases:
+
+See Beyond
+Awaken the Vision
+Ink With Insight
+
+---
+
+# Final Result
+
+The finished site should feel like:
+
+A **gallery for tattoo collectors**
+A **portfolio hub for artists**
+A **clear booking gateway**
+A **visual experience that reflects the studio environment**
+
+---
+
+If you want, I can also produce a **Lovable “one-shot master build prompt”** that can generate the entire site structure automatically.

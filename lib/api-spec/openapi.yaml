@@ -1,15 +1,20 @@
 openapi: 3.1.0
 info:
-  # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
-  description: API specification
+  description: Third Eye Gallery API
 servers:
   - url: /api
     description: Base API path
 tags:
   - name: health
     description: Health operations
+  - name: artists
+    description: Artist operations
+  - name: gallery
+    description: Gallery operations
+  - name: prints
+    description: Art prints operations
 paths:
   /healthz:
     get:
@@ -24,6 +29,48 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /artists:
+    get:
+      operationId: getArtists
+      tags: [artists]
+      summary: Get all artists
+      responses:
+        "200":
+          description: List of artists
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Artist"
+  /gallery:
+    get:
+      operationId: getGalleryImages
+      tags: [gallery]
+      summary: Get gallery images
+      responses:
+        "200":
+          description: List of gallery images
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/GalleryImage"
+  /prints:
+    get:
+      operationId: getArtPrints
+      tags: [prints]
+      summary: Get art prints
+      responses:
+        "200":
+          description: List of art prints
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ArtPrint"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +80,78 @@ components:
           type: string
       required:
         - status
-
+    Artist:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        slug:
+          type: string
+        specialty:
+          type: string
+        styles:
+          type: array
+          items:
+            type: string
+        bio:
+          type: string
+        instagram:
+          type: string
+        bookingUrl:
+          type: ["string", "null"]
+        imageUrl:
+          type: ["string", "null"]
+      required:
+        - id
+        - name
+        - slug
+        - specialty
+        - styles
+        - bio
+        - instagram
+    GalleryImage:
+      type: object
+      properties:
+        id:
+          type: string
+        imageUrl:
+          type: string
+        artistName:
+          type: string
+        artistSlug:
+          type: string
+        style:
+          type: string
+        title:
+          type: ["string", "null"]
+      required:
+        - id
+        - imageUrl
+        - artistName
+        - artistSlug
+        - style
+    ArtPrint:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        artistName:
+          type: string
+        imageUrl:
+          type: string
+        size:
+          type: ["string", "null"]
+        price:
+          type: ["number", "null"]
+        available:
+          type: boolean
+      required:
+        - id
+        - title
+        - artistName
+        - imageUrl
+        - available

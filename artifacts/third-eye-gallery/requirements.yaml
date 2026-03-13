@@ -1,0 +1,20 @@
+packages:
+  "framer-motion": "For smooth page transitions and scroll reveals essential to the premium gallery feel"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility to merge tailwind classes safely"
+
+images:
+  - path: "artifacts/third-eye-gallery/public/images/hero-bg.png"
+    description: "Dark, moody, abstract ink and smoke texture in deep indigo and charcoal, evoking a sophisticated tattoo gallery atmosphere"
+    aspect_ratio: "16:9"
+  - path: "artifacts/third-eye-gallery/public/images/abstract-art-1.png"
+    description: "Abstract flowing liquid art in dark blues and silver"
+    aspect_ratio: "3:4"
+  - path: "artifacts/third-eye-gallery/public/images/abstract-art-2.png"
+    description: "Minimalist geometric lines in neon blue on a pure black background"
+    aspect_ratio: "3:4"
+
+notes:
+  - Using generated hooks from @workspace/api-client-react
+  - Implementing dark theme by default, enforcing dark mode styling across all components
+  - Custom font loading via Google Fonts in index.css
