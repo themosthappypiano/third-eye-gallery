@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import logoUrl from "@assets/ChatGPT_Image_Mar_13,_2026,_10_28_40_AM_1773397725192.png";
 
 const NAV_LINKS = [
@@ -19,14 +19,11 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [location]);
@@ -37,24 +34,16 @@ export function Navbar() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
             ? "bg-background/90 backdrop-blur-lg border-b border-white/5 py-3"
-            : "bg-transparent py-5"
+            : "bg-transparent py-4"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-10 h-10 overflow-hidden rounded-full border border-primary/20 group-hover:border-primary/50 transition-colors">
-              <img 
-                src={logoUrl} 
-                alt="Third Eye Gallery Logo" 
-                className="w-full h-full object-cover"
-              />
+          <Link href="/" className="inline-block">
+            <div className="relative w-24 h-24 md:w-32 md:h-32 overflow-hidden rounded-full border border-primary/30 shadow-[0_0_45px_rgba(186,211,255,0.22)]">
+              <img src={logoUrl} alt="Third Eye Gallery Logo" className="w-full h-full object-cover" />
             </div>
-            <span className="font-display text-2xl tracking-widest text-foreground group-hover:text-primary transition-colors">
-              3rd Eye
-            </span>
           </Link>
 
-          {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((link) => (
               <Link
@@ -79,7 +68,6 @@ export function Navbar() {
             ))}
           </nav>
 
-          {/* Mobile Menu Toggle */}
           <button
             className="md:hidden text-foreground p-2 -mr-2"
             onClick={() => setMobileMenuOpen(true)}
@@ -90,7 +78,6 @@ export function Navbar() {
         </div>
       </header>
 
-      {/* Mobile Nav Overlay */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -103,6 +90,7 @@ export function Navbar() {
               <button
                 onClick={() => setMobileMenuOpen(false)}
                 className="p-2 text-foreground hover:text-primary transition-colors"
+                aria-label="Close Menu"
               >
                 <X className="w-8 h-8" />
               </button>

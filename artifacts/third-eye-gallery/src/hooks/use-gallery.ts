@@ -1,18 +1,29 @@
-import { 
-  useGetArtists, 
-  useGetGalleryImages, 
-  useGetArtPrints 
-} from "@workspace/api-client-react";
+import { STATIC_ARTISTS, STATIC_GALLERY_IMAGES, STATIC_PRINTS } from "@/lib/static-data";
 
-// Re-exporting generated hooks for clean semantic imports within the frontend
+type StaticHookResult<T> = {
+  data: T;
+  isLoading: boolean;
+  isError: boolean;
+  error: null;
+};
+
+function buildStaticResult<T>(data: T): StaticHookResult<T> {
+  return {
+    data,
+    isLoading: false,
+    isError: false,
+    error: null,
+  };
+}
+
 export function useArtists() {
-  return useGetArtists();
+  return buildStaticResult(STATIC_ARTISTS);
 }
 
 export function useGallery() {
-  return useGetGalleryImages();
+  return buildStaticResult(STATIC_GALLERY_IMAGES);
 }
 
 export function usePrints() {
-  return useGetArtPrints();
+  return buildStaticResult(STATIC_PRINTS);
 }

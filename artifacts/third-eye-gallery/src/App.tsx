@@ -7,6 +7,7 @@ import NotFound from "@/pages/not-found";
 // Pages
 import Home from "./pages/Home";
 import Artists from "./pages/Artists";
+import ArtistGallery from "./pages/ArtistGallery";
 import Gallery from "./pages/Gallery";
 import Prints from "./pages/Prints";
 import Booking from "./pages/Booking";
@@ -26,6 +27,9 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/artists" component={Artists} />
+      <Route path="/artists/:slug">
+        {(params) => <ArtistGallery slug={params.slug} />}
+      </Route>
       <Route path="/gallery" component={Gallery} />
       <Route path="/prints" component={Prints} />
       <Route path="/booking" component={Booking} />

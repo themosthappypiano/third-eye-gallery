@@ -1,14 +1,16 @@
 import { defineConfig } from "drizzle-kit";
-import path from "path";
 
 if (!process.env.DATABASE_URL) {
   throw new Error("DATABASE_URL, ensure the database is provisioned");
 }
 
+// Auto-detect database type based on URL
+const isLocal = process.env.DATABASE_URL.startsWith('file:');
+
 export default defineConfig({
-  schema: path.join(__dirname, "./src/schema/index.ts"),
-  dialect: "postgresql",
-  dbCredentials: {
-    url: process.env.DATABASE_URL,
-  },
+  schema: "./src/schema/index.ts",
+  dialect: isLocal ? "sqlite" : "postgresql",
+  dbCredentials: isLocal 
+    ? { url: process.env.DATABASE_URL }
+    : { url: process.env.DATABASE_URL },
 });

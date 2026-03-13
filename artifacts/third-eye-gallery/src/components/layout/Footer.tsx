@@ -16,7 +16,12 @@ export function Footer() {
               Art you wear. One-of-one. Every time. A contemporary tattoo collective pushing the boundaries of skin art.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+              <a
+                href="https://www.instagram.com/thirdeyegallery/?hl=en"
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
                 <Instagram className="w-4 h-4" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
